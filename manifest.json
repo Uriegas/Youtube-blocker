@@ -1,0 +1,35 @@
+{
+    "manifest_version" : 2,
+    "name" : "Youtube Blocker",
+    "version" : "1.0",
+    "background" : {
+        "scripts" : ["src/js/background.js"]
+    },
+    "content_scripts" : [
+        {
+        "matches" : [
+            "*://www.youtube.com/"
+        ],
+        "js" : ["src/js/main_page.js"]
+        },
+        {
+        "matches" : [
+            "*://www.youtube.com/watch*"
+        ],
+        "js" : ["src/js/video_page.js"]
+        }
+    ],
+
+    "browser_action" : {
+        "default_icon" : "src/resources/youtube.png"
+    },
+
+    "homepage_url" : "https://github.com/Uriegas/Youtube-blocker",
+    "description" : "Youtube Blocker",
+    
+    "icons" : {
+        "16" : "src/resources/youtube.png",
+        "48" : "src/resources/youtube.png",
+        "128" : "src/resources/youtube.png"
+    }
+}
