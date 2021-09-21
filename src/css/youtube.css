@@ -5,3 +5,19 @@
 #primary.ytd-two-column-browse-results-renderer {
     display : none
 }
+
+#guide-content.ytd-app {
+    display : none !important
+}
+
+.ytp-endscreen-content {
+    display: none;
+}
+
+.ytp-ce-element {
+    display: none !important;
+}
+
+.ytp-next-button {
+    display: none !important;
+}
